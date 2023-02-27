@@ -65,13 +65,14 @@
 
          <Button
              android:id="@+id/btn"
-             android:layout_width="match_parent"
+             android:layout_width="100dp"
              android:layout_height="wrap_content"
              android:layout_marginStart="8dp"
              android:layout_marginTop="25dp"
              android:layout_marginEnd="8dp"
              android:gravity="center"
-             android:background="@drawable/backgroundradius"
+             android:background="@drawable/backgroundbtnradius"
+             android:backgroundTint="@color/Brown"
              android:onClick="onBtnClick"
              android:text="@string/done"
              android:textColor="@color/white"
