@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Task1SayHello</string>
+    <string name="say_hello_to_your_self">Say Hello To Your Self</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="done">Done</string>
+</resources>

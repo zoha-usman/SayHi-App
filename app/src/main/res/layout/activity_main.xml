@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#57BF1212"/>
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <android.support.constraint.ConstraintLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <TextView
+             android:id="@+id/Hello"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:layout_marginTop="110dp"
+             android:layout_marginEnd="8dp"
+             android:hint="@string/say_hello_to_your_self"
+             android:text=""
+             android:background="@drawable/backgroundradius"
+             android:minHeight="48dp"
+             android:textColor="#F5F5F6"
+             android:gravity="center"
+             android:textStyle="bold|italic"
+             android:typeface="sans"
+             android:textColorHint="@color/Brown"
+             android:textSize="40sp"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent">
+
+         </TextView>
+
+         <EditText
+             android:id="@+id/EditText"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:layout_marginTop="25dp"
+             android:layout_marginEnd="8dp"
+             android:ems="10"
+             android:textColor="@color/Brown"
+             android:gravity="center"
+             android:hint="@string/enter_name"
+             android:inputType="textPersonName"
+             android:background="@drawable/backgroundradius"
+             android:minHeight="50dp"
+             android:textSize="30sp"
+             android:textStyle="bold|italic"
+             android:typeface="sans"
+             app:layout_constraintEnd_toEndOf="@+id/Hello"
+             app:layout_constraintStart_toStartOf="@+id/Hello"
+             app:layout_constraintTop_toBottomOf="@+id/Hello">
+
+         </EditText>
+
+         <Button
+             android:id="@+id/btn"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="8dp"
+             android:layout_marginTop="25dp"
+             android:layout_marginEnd="8dp"
+             android:gravity="center"
+             android:background="@drawable/backgroundradius"
+             android:onClick="onBtnClick"
+             android:text="@string/done"
+             android:textColor="@color/white"
+             android:minHeight="50dp"
+             android:textSize="30sp"
+             android:textStyle="bold|italic"
+             android:typeface="sans"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="@+id/EditText"
+             app:layout_constraintStart_toStartOf="@+id/EditText"
+             app:layout_constraintTop_toBottomOf="@+id/EditText">
+
+         </Button>
+
+
+     </android.support.constraint.ConstraintLayout>
+
+ </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
